@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole Mutter Portfolio</title>
+    <link  rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/e07a1e11c5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="justify-start">
+            <a href="" id="navbar__logo"><i class="fa-regular fa-compass"></i> Cole Mutter</a>
+        </div>
+        <div class="navbar_container">
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="./index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./aboutMe.html" class="navbar__links">
+                        About Me
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./projects.html" class="navbar__links">
+                        Projects
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="https://calendly.com/cole-mutter/30min" class="button">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="main">
+        <div class="project__main__container">
+            <div class="project__main__content">
+                <h1> Projects</h1>
+                <p> <i class="fa-solid fa-down-long"></i>Here are a few projects I've worked on recently <i class="fa-solid fa-down-long"></i>
+                </p>
+            </div>
+        </div>
+        <div class="project__container__left">
+            <div class="main__content">
+                <div class="main__content">
+                    <h1> Voyant - Mean Reversion</h1>
+                    <p> Implemented a new mean-reverting and volatility preservation algorithm for mean reversion data within Voyant's Monte Carlo simulation. 
+                        This allowed their future estimating simulation align better with real market trends.
+                        I cannot show pictures of this per company policy.
+                    </p>
+                </div>
+            </div>
+            <div class="main__img--container">
+                <img src="images/undraw_investing_kncz.svg" alt="pic" id="main__img" />
+            </div>
+        </div>
+        <div class="project__container__right">
+            <div class="main__img--container">
+                <img src="images/undraw_stock-prices_8nuz.svg" alt="pic" id="main__img" />
+            </div>
+            <div class="main__content">
+                <div class="main__content">
+                    <h1> Voyant - Objective Based Investment Calculator</h1>
+                    <p> Created Objective Based Investing algorithm that utilizes monte carlo approaches to make an informed assesment and suggestion on investing strategy.
+                        I cannot show pictures of this per company policy.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project__container__left">
+            <div class="main__content">
+                <div class="main__content">
+                    <h1> Connect 4 Engine</h1>
+                    <p> This is an engine created in C++ that will play Connect 4 against you (and basically never lose). 
+                        Utilizes board states as nodes to analyze future positions and uses SFML for graphics. 
+                        The engine has a move view depth of 9 to avoid excessive memory use.
+                    </p>
+                </div>
+            </div>
+            <div class="main__img--container">
+                <img src="images/connect4.svg" alt="pic" id="main__img" />
+            </div>
+        </div>
+        <div class="project__container__right">
+            <div class="main__img--container">
+                <img src="images/mtgbuilder.svg" alt="pic" id="main__img" />
+            </div>
+            <div class="main__content">
+                <div class="main__content">
+                    <h1> MTG Deck Builder/Viewer</h1>
+                    <p> This is a project that I created to learn how to use SFML. 
+                        The builder allows the user to search for Magic the Gathering cards from within a database to add to decks to be viewed.
+                        Also allows the user to save and load decks upon startup/shutdown of the app.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project__container__left">
+            <div class="main__content">
+                <div class="main__content">
+                    <h1> In the Works: Friendly Competion App</h1>
+                    <p> Currently working on an I-phone app that will use AWS to interface with with a java server.
+                        The app will allow users to make game leagues with their friends and assign tasks to teams for compleation in the real world.
+                    </p>
+                </div>
+            </div>
+            <div class="main__img--container">
+                <img src="images/undraw_ideas_vn7a.svg" alt="pic" id="main__img" />
+            </div>
+        </div>
+    </div>
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Where You Can Find Me</h2>
+                    <a>cole.mutter@icloud.com</a>
+                    <a href="https://github.com/colemutter">GitHub</a>
+                    <a href="https://www.linkedin.com/in/cole-mutter-a39258278">LinkedIn</a>
+                    <a href="Cole_Mutter_Resume_Post_Voyant.pdf">Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script> 
+</body>
+</html>
