@@ -309,6 +309,10 @@
     padding-right: 50px;
 }
 
+.projects {
+    background: #131313;
+}
+
 .project__container__right {
     display: grid;
     grid-template-columns: 1fr 3fr;
