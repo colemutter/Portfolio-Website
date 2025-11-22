@@ -2,79 +2,145 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cole Mutter Portfolio</title>
-    <link  rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/e07a1e11c5.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cole Mutter — Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="justify-start">
-            <a href="" id="navbar__logo"><i class="fa-regular fa-compass"></i> Cole Mutter</a>
-        </div>
-        <div class="navbar_container">
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="" class="navbar__links">
-                        Home
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./aboutMe.html" class="navbar__links">
-                        About Me
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./projects.html" class="navbar__links">
-                        Projects
-                    </a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="https://calendly.com/cole-mutter/30min" class="button">
-                        Contact Me
-                    </a>
-                </li>
-            </ul>
-        </div>
+
+<header>
+    <div class="header-inner">
+        <h1>Welcome to my portfolio</h1>
+        <button id="mobile-menu-toggle" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html#">Projects</a>
+        <a href="aboutMe.html">About</a>
+        <a href="https://calendly.com/cole-mutter/30min">Contact</a>
     </nav>
+</header>
 
 
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <div class="main__content">
-                    <h1> WELCOME!</h1>
-                    <p> I am looking for an internship for the summer of 2026! Contact me if you are interested. Feel free to take a look around. (Best viewed on pc)
-                    </p>
+<div class="container">
+
+    <h2>Hello, I'm Cole 👋</h2>
+    <p>
+        I'm a developer and engineer who enjoys building clean, functional software
+        and learning new technologies. This portfolio showcases the work I’ve done
+        and the projects I’m most proud of. I am searching for an internship for the
+        summer of 2026, please feel free to contact me if you're interested.
+    </p>
+
+    <p>
+        Feel free to explore my site to learn more about me and the things I create.
+    </p>
+
+    <br>
+
+    <a class="project-link" href="projects.html">→ View My Projects</a>
+
+</div>
+
+<section class="mini-portfolio-carousel">
+    <h2>Featured Projects</h2>
+    <div class="carousel-wrapper">
+        <button class="carousel-btn prev" aria-label="Previous project">&#10094;</button>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="project-card">
+                    <img src="images/stockTrader.svg" alt="Project 1">
+                    <h3>Day Trader Bot</h3>
+                    <p>ML based software for day trading</p>
+                    <a href="projects.html" class="project-link">View Project</a>
                 </div>
-            </div>
-            <div class="main__img--container">
-                <img src="images/undraw_building-a-website_1wrp.svg" alt="pic" id="main__img" />
+                <div class="project-card">
+                    <img src="images/undraw_investing_kncz.svg" alt="Project 2">
+                    <h3>Voyant - Mean Reversion</h3>
+                    <p>Enhanced Monte Carlo Algorithm</p>
+                    <a href="/project2" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="images/connect4.svg" alt="Project 2">
+                    <h3>Connect-4 Engine</h3>
+                    <p>Connect 4 bot that is impossible to beat</p>
+                    <a href="/project2" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="images/undraw_stock-prices_8nuz.svg" alt="Project 2">
+                    <h3>Voyant - OBI Calculator</h3>
+                    <p>Objective Based Investing Calculator</p>
+                    <a href="/project2" class="project-link">View Project</a>
+                </div>
+
+
+
             </div>
         </div>
+        <button class="carousel-btn next" aria-label="Next project">&#10095;</button>
     </div>
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Where You Can Find Me</h2>
-                    <a>cole.mutter@icloud.com</a>
-                    <a href="https://github.com/colemutter">GitHub</a>
-                    <a href="https://www.linkedin.com/in/cole-mutter-a39258278">LinkedIn</a>
-                    <a href="Cole_Mutter_Professional_Resume.pdf">Resume</a>
-                </div>
-            </div>
-        </div>
-    </div>
+</section>
 
-    <script src="app.js"></script> 
+
+<footer>
+    <div class="footer-links">
+        <a href="mailto:cole.mutter@icloud.com" aria-label="Email">📧 Email</a>
+        <a href="https://github.com/colemutter" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐱 GitHub</a>
+        <a href="https://www.linkedin.com/in/cole-mutter-a39258278" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">🔗 LinkedIn</a>
+        <a href="Cole_Mutter_Professional_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">📄 Resume</a>
+    </div>
+</footer>
+<script>
+    const toggleButton = document.getElementById('mobile-menu-toggle');
+    const navMenu = document.querySelector('nav');
+
+    toggleButton.addEventListener('click', () => {
+        const expanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
+        toggleButton.setAttribute('aria-expanded', !expanded);
+        navMenu.classList.toggle('active');
+        toggleButton.classList.toggle('open');
+    });
+
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+
+    let currentIndex = 0;
+
+    const updateButtons = () => {
+        const maxIndex = track.children.length - 1;
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === maxIndex;
+    };
+
+    const moveCarousel = () => {
+        const cardWidth = track.children[0].getBoundingClientRect().width + 20; // includes gap
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        updateButtons();
+    };
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            moveCarousel();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < track.children.length - 1) {
+            currentIndex++;
+            moveCarousel();
+        }
+    });
+
+
+    updateButtons();
+
+</script>
 </body>
 </html>
